@@ -1,0 +1,6 @@
+dvc
+pandas
+sklearn
+
+# local packages -
+-e .

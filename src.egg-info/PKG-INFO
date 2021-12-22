@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: src
+Version: 0.0.1
+Summary: A small package for dvc pipeline
+Home-page: https://github.com/damanpreet26/dvc-ml-demo
+Author: demon
+Author-email: damanpreets26@gmail.com
+License: GPU
+Platform: UNKNOWN
+Requires-Python: >=3.7
+
+ This is for the load and save fil
+commands are as follows:
+1) create a conda environment
+conda create -n new_env python=3.8 -v
+
+2) activate the conda environment
+conda activate new_env
+
+3) install dvc
+pip install dvc
+
+4) initiate git
+git init
+
+5) initiate dvc
+dvc init
+
+
+
+
