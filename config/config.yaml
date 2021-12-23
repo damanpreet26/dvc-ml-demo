@@ -2,4 +2,4 @@ data_source: https://archive.ics.uci.edu/ml/machine-learning-databases/wine-qual
 artifacts:
   artifacts_dir: artifacts
   raw_local_dir: raw_local_dir
-  raw_local_files: raw_local_files
+  raw_local_files: data.csv
