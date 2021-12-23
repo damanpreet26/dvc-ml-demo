@@ -76,7 +76,7 @@ mkdir config
 touch config/config.yaml
 ```
 
---content of config.yaml file
+content of config.yaml file
 
 ```yaml
 data_source: https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv
@@ -115,7 +115,7 @@ stages:
 dvc repro
 ```
 
-### Step 12 : commit and push the changes to git
+## Step 12 : commit and push the changes to git
 ```bash
 git add .
 git commit -m "making commit"
