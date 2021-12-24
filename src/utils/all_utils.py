@@ -14,4 +14,4 @@ def create_directory(dir_list: list):
 
 def save_local_files(data,datapath, index_status=False):
     data.to_csv(datapath,index=index_status)
-    print(f"{data} dataframe saved")
+    print(f" dataframe saved")
