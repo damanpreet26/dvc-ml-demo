@@ -1,5 +1,6 @@
 import yaml
 import os
+import json
 
 
 def read_yaml(path_to_file: str) -> dict:
@@ -15,3 +16,8 @@ def create_directory(dir_list: list):
 def save_local_files(data,datapath, index_status=False):
     data.to_csv(datapath,index=index_status)
     print(f" dataframe saved")
+
+def save_reports(report:dict, report_path:str):
+    with open(report_path,"w") as f:
+        json.dump(report, f, indent=4)
+    print(f"report saved ")

@@ -10,3 +10,7 @@ artifacts:
 
   model_dir: model_dir
   model_file: Elasticnet.model
+
+  report_dir: report_dir
+  report_file: Elasticnet.json
+
