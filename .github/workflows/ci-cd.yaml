@@ -24,7 +24,7 @@ jobs:
           
           echo "#REPORTS">> report.md
           echo "------">> report.md
-          cat artifacts/report_dir/Elasticnet,json>> report.md
+          cat artifacts/report_dir/Elasticnet.json>> report.md
           
           cml-send-comment report.md
           
