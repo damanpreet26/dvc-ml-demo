@@ -1,0 +1,32 @@
+## add ci-cd steps here
+name: train_ML_usecase
+
+on: [push]
+
+jobs:
+  run:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: iterative/setup-cml@v1
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+
+      - name: cml_run
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pip install --uprade pip
+          pip install -r requirements.txt
+          
+          dvc repro -v
+          
+          echo "#REPORTS">> report.md
+          echo "------">>report.md
+          cat artifacts/report_dir/Elasticnet,json>> report.md
+          
+          cml-send-comment report.md
+          
+          
