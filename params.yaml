@@ -1,9 +1,9 @@
 base:
   random_state: 41222
-  test_size: 0.3
+  test_size: 0.4
 
 Model_params:
   Elasticnet:
-    alpha: 0.9
+    alpha: 0.22
     l1_ratio: 0.2
 
